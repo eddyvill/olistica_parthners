@@ -1,4 +1,4 @@
-package com.smartersvision.home_services_provider
+package app.olistica.oliparthner
 
 import io.flutter.embedding.android.FlutterActivity
 
