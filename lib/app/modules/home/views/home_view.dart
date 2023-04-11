@@ -37,7 +37,7 @@ class HomeView extends GetView<HomeController> {
                     iconTheme: IconThemeData(color: Get.theme.primaryColor),
                     title: Text(
                       Get.find<SettingsService>().setting.value.providerAppName,
-                      style: Get.textTheme.headline6,
+                      style: Get.textTheme.titleLarge,
                     ),
                     centerTitle: true,
                     automaticallyImplyLeading: false,

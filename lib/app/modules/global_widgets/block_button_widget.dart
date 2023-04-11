@@ -26,7 +26,7 @@ class BlockButtonWidget extends StatelessWidget {
         color: this.color,
         disabledElevation: 0,
         disabledColor: Get.theme.focusColor,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
         child: this.text,
         elevation: 0,
       ),

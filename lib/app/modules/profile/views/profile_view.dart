@@ -24,7 +24,7 @@ class ProfileView extends GetView<ProfileController> {
             : AppBar(
                 title: Text(
                   "Profile".tr,
-                  style: context.textTheme.headline6,
+                  style: context.textTheme.titleLarge,
                 ),
                 centerTitle: true,
                 backgroundColor: Colors.transparent,
@@ -39,7 +39,7 @@ class ProfileView extends GetView<ProfileController> {
           padding: EdgeInsets.symmetric(vertical: 10),
           decoration: BoxDecoration(
             color: Get.theme.primaryColor,
-            borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20)),
+            borderRadius: BorderRadius.only(topLeft: Radius.circular(30), topRight: Radius.circular(30)),
             boxShadow: [
               BoxShadow(color: Get.theme.focusColor.withOpacity(0.1), blurRadius: 10, offset: Offset(0, -5)),
             ],
@@ -52,9 +52,9 @@ class ProfileView extends GetView<ProfileController> {
                     controller.saveProfileForm();
                   },
                   padding: EdgeInsets.symmetric(horizontal: 30, vertical: 12),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
                   color: Get.theme.colorScheme.secondary,
-                  child: Text("Save".tr, style: Get.textTheme.bodyText2.merge(TextStyle(color: Get.theme.primaryColor))),
+                  child: Text("Save".tr, style: Get.textTheme.bodyMedium.merge(TextStyle(color: Get.theme.primaryColor))),
                   elevation: 0,
                   highlightElevation: 0,
                   hoverElevation: 0,
@@ -67,9 +67,9 @@ class ProfileView extends GetView<ProfileController> {
                   controller.resetProfileForm();
                 },
                 padding: EdgeInsets.symmetric(horizontal: 30, vertical: 12),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
                 color: Get.theme.hintColor.withOpacity(0.1),
-                child: Text("Reset".tr, style: Get.textTheme.bodyText2),
+                child: Text("Reset".tr, style: Get.textTheme.bodyMedium),
                 elevation: 0,
                 highlightElevation: 0,
                 hoverElevation: 0,
@@ -83,7 +83,7 @@ class ProfileView extends GetView<ProfileController> {
           child: ListView(
             primary: true,
             children: [
-              Text("Profile details".tr, style: Get.textTheme.headline5).paddingOnly(top: 25, bottom: 0, right: 22, left: 22),
+              Text("Profile details".tr, style: Get.textTheme.headlineSmall).paddingOnly(top: 25, bottom: 0, right: 22, left: 22),
               Text("Change the following details and save them".tr, style: Get.textTheme.caption).paddingSymmetric(horizontal: 22, vertical: 5),
               Obx(() {
                 return ImageFieldWidget(
@@ -126,11 +126,11 @@ class ProfileView extends GetView<ProfileController> {
                 suffix: controller.user.value.verifiedPhone
                     ? Text(
                         "Verified".tr,
-                        style: Get.textTheme.caption.merge(TextStyle(color: Colors.green)),
+                        style: Get.textTheme.bodySmall.merge(TextStyle(color: Colors.green)),
                       )
                     : Text(
                         "Not Verified".tr,
-                        style: Get.textTheme.caption.merge(TextStyle(color: Colors.redAccent)),
+                        style: Get.textTheme.bodySmall.merge(TextStyle(color: Colors.redAccent)),
                       ),
               ),
               TextFieldWidget(

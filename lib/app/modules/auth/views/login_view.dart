@@ -23,7 +23,7 @@ class LoginView extends GetView<AuthController> {
         appBar: AppBar(
           title: Text(
             "Login".tr,
-            style: Get.textTheme.headline6.merge(TextStyle(color: context.theme.primaryColor)),
+            style: Get.textTheme.titleLarge.merge(TextStyle(color: context.theme.primaryColor)),
           ),
           centerTitle: true,
           backgroundColor: Get.theme.colorScheme.secondary,
@@ -43,9 +43,9 @@ class LoginView extends GetView<AuthController> {
                     width: Get.width,
                     decoration: BoxDecoration(
                       color: Get.theme.colorScheme.secondary,
-                      borderRadius: BorderRadius.vertical(bottom: Radius.circular(10)),
+                      borderRadius: BorderRadius.vertical(bottom: Radius.circular(30)),
                       boxShadow: [
-                        BoxShadow(color: Get.theme.focusColor.withOpacity(0.2), blurRadius: 10, offset: Offset(0, 5)),
+                        BoxShadow(color: Get.theme.focusColor.withOpacity(0.2), blurRadius: 30, offset: Offset(0, 5)),
                       ],
                     ),
                     margin: EdgeInsets.only(bottom: 50),
@@ -55,12 +55,12 @@ class LoginView extends GetView<AuthController> {
                         children: [
                           Text(
                             _settings.providerAppName,
-                            style: Get.textTheme.headline6.merge(TextStyle(color: Get.theme.primaryColor, fontSize: 24)),
+                            style: Get.textTheme.titleLarge.merge(TextStyle(color: Get.theme.primaryColor, fontSize: 24)),
                           ),
                           SizedBox(height: 5),
                           Text(
                             "Welcome to the best service provider system!".tr,
-                            style: Get.textTheme.caption.merge(TextStyle(color: Get.theme.primaryColor)),
+                            style: Get.textTheme.bodySmall.merge(TextStyle(color: Get.theme.primaryColor)),
                             textAlign: TextAlign.center,
                           ),
                           // Text("Fill the following credentials to login your account", style: Get.textTheme.caption.merge(TextStyle(color: Get.theme.primaryColor))),
@@ -70,11 +70,11 @@ class LoginView extends GetView<AuthController> {
                   ),
                   Container(
                     decoration: Ui.getBoxDecoration(
-                      radius: 14,
+                      radius: 28,
                       border: Border.all(width: 5, color: Get.theme.primaryColor),
                     ),
                     child: ClipRRect(
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      borderRadius: BorderRadius.all(Radius.circular(30)),
                       child: Image.asset(
                         'assets/icon/icon.png',
                         fit: BoxFit.cover,
@@ -137,7 +137,7 @@ class LoginView extends GetView<AuthController> {
                         color: Get.theme.colorScheme.secondary,
                         text: Text(
                           "Login".tr,
-                          style: Get.textTheme.headline6.merge(TextStyle(color: Get.theme.primaryColor)),
+                          style: Get.textTheme.titleLarge.merge(TextStyle(color: Get.theme.primaryColor)),
                         ),
                       ).paddingSymmetric(vertical: 10, horizontal: 20),
                       Row(

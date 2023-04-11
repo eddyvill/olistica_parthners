@@ -79,7 +79,7 @@ class TabBarLoadingWidget extends StatelessWidget implements PreferredSize {
             padding: EdgeInsets.symmetric(horizontal: 20.0 * (index + 1), vertical: 15),
             backgroundColor: Get.theme.focusColor.withOpacity(0.1),
             selectedColor: Get.theme.colorScheme.secondary,
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
             showCheckmark: false,
             pressElevation: 0,
           ).marginSymmetric(horizontal: 15),
@@ -121,12 +121,12 @@ class ChipWidget extends StatelessWidget {
       return RawChip(
         elevation: 0,
         label: Text(text),
-        labelStyle: controller.isSelected(this.id) ? Get.textTheme.bodyText2.merge(TextStyle(color: Get.theme.primaryColor)) : Get.textTheme.bodyText2,
+        labelStyle: controller.isSelected(this.id) ? Get.textTheme.bodyMedium.merge(TextStyle(color: Get.theme.primaryColor)) : Get.textTheme.bodyText2,
         padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
         backgroundColor: Get.theme.focusColor.withOpacity(0.1),
         selectedColor: Get.theme.colorScheme.secondary,
         selected: controller.isSelected(this.id),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
         showCheckmark: false,
         pressElevation: 0,
         onSelected: (bool value) {
