@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "525903779993",
+    "project_id": "olistica-parthner",
+    "storage_bucket": "olistica-parthner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525903779993:android:d72cba0a6f64ea493c0008",
+        "android_client_info": {
+          "package_name": "app.olistica.oliparthner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525903779993-52hgk96m3kokm9n6t3uhrfelen99t7lb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYpSUzeEPZ6LT8Lr8pHWyVLQGn-oD7e0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525903779993-52hgk96m3kokm9n6t3uhrfelen99t7lb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
